@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="shortcut icon" href="assets/imgs/icons/to-do-list.png" type="image/x-icon">
+    <title>ToDo List - Teste</title>
+</head>
+<body>
+    <div class="container-center">
+        <h1 id="todo-title">To-Do List - Testing</h1>
+        <p id="desc-todo">Adicione seus afazeres abaixo</p>
+        <p class="test-text">OBS.: o conteúdo adicionado <span class="upper">não ficará salvo</span>. O projeto ainda está em fase de testes!</p>
+        <form id="todo-form">
+            <input type="text" id="input-text" placeholder="Arrumar a cama..." required>
+            <button type="submit" id="btn-cta-add">Adicionar</button>
+        </form>
+
+        <div id="container-general"></div>
+    </div>
+
+    <div class="wrap-ok hidden">
+        <div id="successful">
+            <img src="assets/imgs/icons/ok-check.png" alt="Sinal de tarefa adicionada" id="ok">
+            <p id="ok-task">Tarefa adicionada com sucesso!</p>
+        </div>
+    </div>
+
+    <div class="wrap hidden">
+        <div id="container-error">
+            <div id="container-background">
+                <h2 id="error-title">ERRO</h2>
+                <p id="error-description">Você não pode adicionar uma tarefa vazia!</p>
+                <button id="close-modal">OK</button>
+            </div>
+        </div>
+    </div>
+
+    <script defer src="assets/js/index.js"></script>
+</body>
+</html>
