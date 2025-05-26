@@ -1,18 +1,24 @@
 'use strict'
 
-// TASK PART
-const inputText = document.getElementById('input-text');
-const btnCtaAdd = document.getElementById('btn-cta-add');
-const containerGeneral = document.getElementById('container-general');
-
-// ERROR PART
-const wrap = document.querySelector('.wrap');
-const closeModal = document.getElementById('close-modal');
-
-// SUCCESSFUL ADDED TASK PART
-const wrapOk = document.querySelector('.wrap-ok');
-
 document.addEventListener('DOMContentLoaded', () => {
+    // TASK PART
+    const inputText = document.getElementById('input-text');
+    const btnCtaAdd = document.getElementById('btn-cta-add');
+    const containerGeneral = document.getElementById('container-general');
+
+    // ERROR PART
+    const wrap = document.querySelector('.wrap');
+    const closeModal = document.getElementById('close-modal');
+
+    // SUCCESSFUL ADDED TASK PART
+    const wrapOk = document.querySelector('.wrap-ok');
+
+    // MEDIA QUERY
+    const mediaQueryEvent = window.screen.width;
+    const successful = document.getElementById('successful');
+    const okTask = document.getElementById('ok-task');
+
+
     btnCtaAdd.addEventListener('click', (e) => {
         e.preventDefault();
         
@@ -93,7 +99,6 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
     });
-
 });
 /*
 <div class="container-todo">
